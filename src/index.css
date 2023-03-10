@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(slideBackground.jpg);
+}
+
+.timer-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.75;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.timer-container {
+  text-align: center;
+  color: #fff;
+  z-index: 99999;
+  margin-top: 6rem;
+}
+
+.timer-container h1 {
+  font-size: 15em;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo img {
+  max-width: 20rem;
+}
+
+.slide-title {
+  font-size: 5em;
+  margin-top: 1.5em;
+}
