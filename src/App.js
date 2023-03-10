@@ -14,7 +14,7 @@ const App = () => {
   }
 
   function setInputValue() {
-    setMinutes("");
+    setMinutes(0);
   }
   // We need ref in this, because we are dealing
   // with JS setInterval to keep track of it and
