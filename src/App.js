@@ -13,8 +13,9 @@ const App = () => {
     setIsOpened((wasOpened) => !wasOpened);
   }
 
-  function setInputValue() {
+  function setInputValue(event) {
     setMinutes(0);
+    onClickReset();
   }
   // We need ref in this, because we are dealing
   // with JS setInterval to keep track of it and
@@ -92,6 +93,7 @@ const App = () => {
   // by the button
   const onClickReset = () => {
     clearTimer(getDeadTime());
+    toggle();
   };
   const handleChange = (event) => {
     setMinutes(event.target.value);
@@ -117,7 +119,7 @@ const App = () => {
               onChange={handleChange}
               value={minuteValue}
             />
-            <button onClick={setInputValue}>Clear Values</button>
+            {/* <button onClick={setInputValue}>Clear Values</button> */}
           </div>
         )}
       </div>
